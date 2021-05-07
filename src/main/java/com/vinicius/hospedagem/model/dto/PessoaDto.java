@@ -1,9 +1,11 @@
 package com.vinicius.hospedagem.model.dto;
 
 import com.vinicius.hospedagem.model.Pessoa;
+import lombok.Getter;
 
 import javax.validation.constraints.NotBlank;
 
+@Getter
 public class PessoaDto {
     @NotBlank(message = "O campo nome não pode ser vazio")
     private String nome;

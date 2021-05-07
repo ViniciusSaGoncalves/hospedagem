@@ -25,4 +25,8 @@ public class Hospedagem {
 
     private boolean estacionamento;
 
+    public Hospedagem(Calendar checkIn, boolean estacionamento) {
+        this.checkIn = checkIn;
+        this.estacionamento = estacionamento;
+    }
 }

@@ -46,7 +46,7 @@ public class PessoaResources implements BaseResource<PessoaDto, PessoaRetornoDto
     @DeleteMapping(value = "/{id}")
     @Override
     public void excluir(@PathVariable Long id) {
-
+        pessoaService.excluir(id);
     }
 
     @ResponseStatus(code = HttpStatus.OK)
